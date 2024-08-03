@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(5, 5, 5);
+}
+
+div{
+    text-align: center; background-color:  rgb(211, 84, 0); 
+    width: 35%;
+    float: inline-start;
+}
+
