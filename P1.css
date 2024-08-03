@@ -8,3 +8,8 @@ div{
     float: inline-start;
 }
 
+div{
+    text-align: center; background-color:  rgb(220, 118, 51);
+    width: 25%;
+    float: initial;
+}
