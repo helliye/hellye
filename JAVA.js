@@ -15,7 +15,8 @@ const Gender = man;
 
 if(Gender = 'man') {
     console.log ("Welcome Man");
-} else if(Gender = 'women') {
+} 
+else  {
     console.log ("Welcome Women");
 }
 
