@@ -7,17 +7,19 @@ welcome women
 // import { Practice } from 'module.js';
 // ba comment import hal nashod 1
 
-function pravtice2 (gender) {
-  return WELCOME
+function practice2 (gender , man , women) {
+  return (WELCOME)
 }
 
-const Gender = male;
+const Gender = man;
 
-if(Gender = 'male') {
+if(Gender = 'man') {
     console.log ("Welcome Man");
-} else if(Gender = 'female') {
+} else if(Gender = 'women') {
     console.log ("Welcome Women");
 }
+
+
 
 
 
