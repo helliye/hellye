@@ -16,7 +16,7 @@ if(HOURS >= 4 && HOURS <= 12) {
 else if (HOURS >= 12 && HOURS <= 17){
     console.log ("Good evening");
 } 
-else if (HOURS >= 17 && HOURS < 24) {
+else if (HOURS >= 17 && HOURS <= 24) {
     console.log ("Good night");
 }
 
