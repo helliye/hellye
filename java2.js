@@ -20,16 +20,17 @@ else if (HOURS >= 17 && HOURS <= 24) {
     console.log ("Good night");
 }
 
+
 //// injs 24 tarif kardam faghat good night goft//
 
 
 // ino to site didam vali inam kar nakard//
 
-
+/*
 function myFunction() {
     var greeting;
 
-    var time = new Date().getHours();
+    var time = new Date().getHours(); تابع ساعت سیستم
 }
     if (time < 10) {
         greeting = "Good morning";
@@ -40,6 +41,6 @@ function myFunction() {
 
         greeting = "Good night";
     } 
-
+*/
 
    
