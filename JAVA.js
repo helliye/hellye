@@ -120,6 +120,7 @@ for (let x = from; x <= to; x++) {
 
 
 ////////// PROMISE CHAINING ///////////
+
 function start (date) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -134,14 +135,13 @@ function by (time) {
     }, 1000);
   });  
 }
-
-// function left (end)) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve ({ end: end , left: "End of message"});
-//     }, 3000);
-//   });  
-// }
+ function left (end) {
+   return new Promise((resolve, reject) => {
+     setTimeout(() => {
+       resolve ({ end: end , left: "End of message"});
+     }, 3000);
+   });  
+ }
 
 start ()
  .then(date => {
@@ -150,6 +150,11 @@ start ()
    })
      .then(time => {
        console.log("time:", time);
+   }) 
+   
+   left () // left inja seda nakardam, end ejra nakard 
+   .then(end => {
+    console.log("end:", end);
    })
      .catch(error => {
      console.error("Error:", error);
