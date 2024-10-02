@@ -119,49 +119,112 @@ for (let x = from; x <= to; x++) {
 // console.log(pattern);
 
 
-////////// PROMISE CHAINING ///////////
+////////// PROMISE ///////////
 
-function start (date) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve ({ date: date , start: "Hello"});
-    }, 2000);
-  });  
-}
-function by (time) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve ({ time: time , by: "Goodbye"});
-    }, 1000);
-  });  
-}
- function left (end) {
-   return new Promise((resolve, reject) => {
-     setTimeout(() => {
-       resolve ({ end: end , left: "End of message"});
-     }, 3000);
-   });  
- }
+// function start (date) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve ({ date: date , start: "Hello"});
+//     }, 2000);
+//   });  
+// }
+// function by (time) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve ({ time: time , by: "Goodbye"});
+//     }, 1000);
+//   });  
+// }
+//  function left (end) {
+//    return new Promise((resolve, reject) => {
+//      setTimeout(() => {
+//        resolve ({ end: end , left: "End of message"});
+//      }, 3000);
+//    });  
+//  }
 
-start ()
- .then(date => {
-       console.log("date:", date);
-       return by(date); //// inja TIME gozashtam khata dad
-   })
-     .then(time => {
-       console.log("time:", time);
-   }) 
+// start ()
+//  .then(date => {
+//        console.log("date:", date);
+//        return by(date); //// inja TIME gozashtam khata dad
+//    })
+//      .then(time => {
+//        console.log("time:", time);
+//    }) 
    
-   left () // left inja seda nakardam, end ejra nakard 
-   .then(end => {
-    console.log("end:", end);
-   })
-     .catch(error => {
-     console.error("Error:", error);
-   });
+//    left () // left inja seda nakardam, end ejra nakard 
+//    .then(end => {
+//     console.log("end:", end);
+//    })
+//      .catch(error => {
+//      console.error("Error:", error);
+//    });
 
 
 
-   ///////////////////////////////
-
+   ////////////// CLASS //////////
   
+  //  class Book {
+  //   constructor(title, author) {
+  //     this.title = title;
+  //     this.author = author;
+  //     this.isCheckedOut = true;
+
+  //   CheckedOut = true;
+  //     if (isCheckedOut = true) {
+  //       console.log (`Thank you for returning ${ this.Book }`);
+  //     } else {
+  //       console.error(`was borrowed by the end of the week ${ this.book}`);
+  //     }
+  //   }
+    
+
+  // returnbook
+  
+//// EMOJI///
+
+// class Emoji {
+//   constructor() {
+//       this.states = ['🙂', '😉', '😜', '😠' , '😣' , '😎']; // حالت‌های مختلف ایموجی
+//       this.state = this.states[Math.floor(Math.random() * this.states.length)]; // حالت اولیه تصادفی
+//   }
+
+//   changeState() {
+//       // تغییر حالت به صورت تصادفی
+//       this.state = this.states[Math.floor(Math.random() * this.states.length)];
+//       this.printEmoji();
+//   }
+
+//   startAnimating() {
+//     for (let i = 0; i < 10; i++) {
+//     this.intervalId = setInterval(() => { // تابع تاخیر زمانی
+//           this.changeState();
+//       }, 700);
+//   }
+// }
+
+//   stopAnimating() {
+//       clearInterval(this.intervalId);
+//   }
+
+//   printEmoji() {
+//       // پاک کردن خط قبلی و چاپ ایموجی جدید
+//       console.clear();
+//       console.log(this.state);
+//   }
+// }
+// const emoji = new Emoji();
+
+// // شروع انیمیشن
+// emoji.startAnimating();
+
+// // بعد از 10 بار تکرار، انیمیشن را متوقف کنید
+// setTimeout(() => {
+//     emoji.stopAnimating();
+// }, 5000);
+
+/////////////////////////////
+
+
+
+ 
